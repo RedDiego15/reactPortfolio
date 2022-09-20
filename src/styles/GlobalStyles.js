@@ -5,8 +5,8 @@ export const GlobalStyles = createGlobalStyle`
     margin:0;
     padding:0;
     box-sizing:border-box;
-}
-body{
+}s
+body{s
     background: ${(p) => p.theme.background_color}
 
 }
@@ -35,13 +35,31 @@ h2{
 .white-text{
     color: white
 }
+table {
+    caption-side: top;
+    border-collapse: inherit;
+}
 @media (min-width: 576px) {
     .container_landing_info{
         position:absolute;
-        bottom: calc(-50% + 142px);
+        bottom: calc(-50% + 219px);
     }
     .container_landing_image{
         height:25rem;
+    }
+    .about-me__figure_container{
+        width:22rem;
+        height:22rem;
+    }
+    .portfolio__item-image{
+        border-radius:15px;
+    }
+    .portfolio__item_container{
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .tableRight{
+        
     }
 
 }

@@ -49,19 +49,19 @@ const Header = () => (
                             <a
                                 className="nav-link white-text"
                                 aria-current="page"
-                                href="/#"
+                                href="#portfolio"
                             >
                                 Portfolio
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link white-text" href="/#">
+                            <a className="nav-link white-text" href="#about_me">
                                 About me
                             </a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link white-text" href="/#">
+                            <a className="nav-link white-text" href="#contact">
                                 Get in Touch
                             </a>
                         </li>
