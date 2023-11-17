@@ -30,16 +30,16 @@ const AboutMe = () => (
                 <AboutMeText className="">
                     Hi, Im Diego Rojas, Engeenier in Computer Science, With
                     expertice in Web Development, Data science and progressive
-                    web apps, i have been developing web pages since october
+                    web apps, i have been developing web pages since
                     2019, i have been working in many projects with different
                     frameworks as react and Angular, beeing react my expertice
                     area. i’ve studied engineering in computer science in Espol.{' '}
                     <br />
                     <br />
                     I worked with differents teams works, following agile
-                    approach with scrum as framework, take a lot of private
+                    approach , take a lot of private
                     courses on web devolpment such as web performance and
-                    advanced use of react framework in platzi academy.
+                    advanced use of react framework. Following TDD, SOLID and clean code
                     <br />
                     <br />
                     I can speak two fluent languages that are english and

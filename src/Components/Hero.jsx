@@ -50,7 +50,7 @@ const Hero = () => (
             </ContainerLandingImage>
             <ContainerLandingInfo className="col-md-6 col-lg-4 container_landing_info">
                 <StyledTitle>
-                    Hi, I'm Diego Rojas Computer Science Engineer Student and i
+                    Hi, I'm Diego Rojas Computer Science Engineer and i
                     Love build beautiful and fast web applications
                 </StyledTitle>
                 <a href="/#portfolio">

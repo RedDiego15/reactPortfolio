@@ -42,7 +42,7 @@ table {
 @media (min-width: 576px) {
     .container_landing_info{
         position:absolute;
-        bottom: calc(-50% + 219px);
+        bottom: calc(-80% + 300px);
     }
     .container_landing_image{
         height:25rem;
@@ -57,9 +57,6 @@ table {
     .portfolio__item_container{
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
-    }
-    .tableRight{
-        
     }
 
 }
