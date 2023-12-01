@@ -7,6 +7,7 @@ import { Theme } from './styles/Theme';
 import { useInitialState } from './Hooks/useInitialState';
 import { Portfolio } from './Components/Portfolio';
 import { Courses } from './Components/Courses';
+import {ContactMe} from './Components/ContactMe'
 
 function App() {
     const initialState = useInitialState();
@@ -18,6 +19,7 @@ function App() {
                 <AboutMe></AboutMe>
                 <Portfolio></Portfolio>
                 <Courses></Courses>
+                <ContactMe></ContactMe>
             </AppContext.Provider>
         </Theme>
     );
