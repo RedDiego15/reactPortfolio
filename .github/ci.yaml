@@ -1,0 +1,60 @@
+name: CI-Frontend
+
+on:
+  push:
+    tags:
+      - v[0-9]+.[0-9]+.[0-9]+-stg
+  pull_request:
+    branches: [main]
+    paths:
+      - "ui/**"
+      - "infrastructure/frontend/**"
+      - ".github/workflows/frontend-ci.yml"
+jobs:
+  ci:
+    strategy:
+      matrix:
+        node_version: [16.x]
+    runs-on: ubuntu-latest
+    env:
+      FRONTEND_DIR: /
+      INFRASTRUCTURE_DIR: infrastructure/
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js ${{ matrix.node_version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node_version }}
+
+      - name: Detect Changes on UI files
+        id: changes
+        uses: dorny/paths-filter@v2
+        with:
+          filters: |
+            src:
+              - 'src/**'
+            infrastructure:
+              - 'infrastructure/environment/**'
+              - 'infrastructure/stg/**'
+
+      - name: Install node dependencies
+        if: steps.changes.outputs.ui == 'true'
+        working-directory: ./${{ env.FRONTEND_DIR }}
+        run: |
+          npm install
+
+      - name: Check lint
+        if: github.event_name == 'pull_request' && steps.changes.outputs.ui == 'true'
+        working-directory: ./${{ env.FRONTEND_DIR }}
+        run: |
+          npm run lint
+
+      - name: Run tests and coverage
+        if: steps.changes.outputs.ui == 'true'
+        working-directory: ${{ env.FRONTEND_DIR }}
+        run: npm run test:coverage
