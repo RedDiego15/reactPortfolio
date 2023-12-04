@@ -6,7 +6,7 @@ import { DivisionLine } from './DivisionLine';
 const FigureContainer = styled.figure`
     border-radius: 50%;
     width: 18rem;
-    height: 18rem;
+    height: 16rem;
 `;
 const ProfileImage = styled.img`
     border-radius: 50%;
@@ -29,23 +29,21 @@ const AboutMe = () => (
                 <h3 className="general-title">About Me</h3>
                 <AboutMeText className="">
                     Hi, Im Diego Rojas, Engeenier in Computer Science, With
-                    expertice in Web Development, Data science and progressive
+                    experience in Web Development, Data science and progressive
                     web apps, i have been developing web pages since
                     2019, i have been working in many projects with different
                     frameworks as react and Angular, beeing react my expertice
-                    area. i’ve studied engineering in computer science in Espol.{' '}
+                    area. i’ve studied engineering in computer science.{' '}
                     <br />
                     <br />
                     I worked with differents teams works, following agile
-                    approach , take a lot of private
+                    approach, As full stack devloper i have worked frontend (React with atomic design) and backend (FastApi with hexagonal architecture),
+                    I have been taken a lot of private
                     courses on web devolpment such as web performance and
                     advanced use of react framework. Following TDD, SOLID and clean code
                     <br />
                     <br />
-                    I can speak two fluent languages that are english and
-                    spanish, i have been working in another areas as costumer
-                    service and attending guest at, which give me the skill to
-                    have better communication with coworkers and work as a team.
+                    I'm a team player, proactive, and always willing to help. 
                     <br />
                 </AboutMeText>
             </div>
