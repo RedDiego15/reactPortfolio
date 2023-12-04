@@ -7,7 +7,7 @@ on:
   pull_request:
     branches: [main]
     paths:
-      - "ui/**"
+      - "src/**"
       - "infrastructure/frontend/**"
       - ".github/workflows/frontend-ci.yml"
 jobs:
