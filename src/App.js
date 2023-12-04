@@ -7,12 +7,12 @@ import { Theme } from './styles/Theme';
 import { useInitialState } from './Hooks/useInitialState';
 import { Portfolio } from './Components/Portfolio';
 import { Courses } from './Components/Courses';
-import {ContactMe} from './Components/ContactMe'
+import { ContactMe } from './Components/ContactMe'
 
 function App() {
     const initialState = useInitialState();
     return (
-        <Theme theme={'light'}>
+        <Theme theme='light'>
             <AppContext.Provider value={initialState}>
                 <Header></Header>
                 <Hero></Hero>

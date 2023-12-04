@@ -10,6 +10,10 @@ const FigureContainerIcons = styled.figure`
     width: 3rem;
     height: 2rem;
 `;
+const FigureContainerGithub = styled(FigureContainerIcons)`
+    width: 2rem;
+    height: 2rem;
+`;
 const ProfileImage = styled.img`
 `;
 
@@ -37,13 +41,13 @@ const ContactMe = () => (
             <div className="row justify-content-center align-items-center ms-2">
                 <div className="col-5">
                     <a href="https://github.com/RedDiego15">
-                        <FigureContainerIcons className="col-3">
+                        <FigureContainerGithub className="col-3">
                             <ProfileImage src="https://th.bing.com/th/id/OIP.u-QJB-oUg7GVqJCqiU4RsAHaHa?rs=1&pid=ImgDetMain" alt="profile-img" />
-                        </FigureContainerIcons>
+                        </FigureContainerGithub>
                     </a>
                 </div>
                 <div className="col-5">
-                    <a href="https://github.com/RedDiego15">
+                    <a href="https://twitter.com/redDiego15">
                         <FigureContainerIcons className="col-3">
                             <ProfileImage src="https://logowik.com/content/uploads/images/twitter-x-icon3832.logowik.com.webp" alt="profile-img" />
                         </FigureContainerIcons>
